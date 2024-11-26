@@ -7,7 +7,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../TimeforMedicine/Time for Medicine.dart';
 import '../../carestate/screens/carestate.dart';
-import '../../serviecse/Entertainmentservices/Entertainmentservices.dart';
+import '../../serviecse/Entertainmentservices/screens/Entertainmentservices.dart';
+import '../../serviecse/SocialServices/screens/SocialServices.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
@@ -92,7 +93,12 @@ class HomePage extends StatelessWidget {
                     title: 'الخدمات الاجتماعية',
                     icon: FontAwesomeIcons.users,
                     color: Colors.purple,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return SocialServicesScreen();
+                      }));
+                    },
                   ),
                   ServiceModel(
                     title: 'الخدمات الترفيهية',

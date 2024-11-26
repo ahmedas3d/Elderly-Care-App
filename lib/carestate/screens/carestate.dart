@@ -8,44 +8,15 @@ class Carestate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          "الحالة الصحية",
+        ),
+      ),
       body: SafeArea(
           child: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(
-              width: double.infinity,
-              height: 20,
-            ),
-            Row(
-              children: [
-                Expanded(
-                  flex: 3,
-                  child: IconButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    icon: const Icon(
-                      Icons.arrow_back_ios,
-                      size: 26,
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  width: 20,
-                ),
-                const Expanded(
-                  flex: 5,
-                  child: const Text(
-                    "الحالة الصحية",
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Color.fromARGB(137, 0, 0, 0),
-                      fontWeight: FontWeight.w300,
-                    ),
-                  ),
-                ),
-              ],
-            ),
             const SizedBox(
               width: double.infinity,
               height: 20,
