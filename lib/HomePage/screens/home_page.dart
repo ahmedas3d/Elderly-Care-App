@@ -5,6 +5,7 @@ import 'package:care_app/core/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../../TimeforMedicine/Time for Medicine.dart';
 import '../../carestate/screens/carestate.dart';
 
 class HomePage extends StatelessWidget {
@@ -62,7 +63,12 @@ class HomePage extends StatelessWidget {
                     title: 'الأدوية',
                     icon: FontAwesomeIcons.capsules,
                     color: Colors.blue,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return const MedicationScheduler();
+                      }));
+                    },
                   ),
                   ServiceModel(
                     title: 'الحالة الصحية',
