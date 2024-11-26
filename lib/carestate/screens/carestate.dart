@@ -53,7 +53,7 @@ class Carestate extends StatelessWidget {
             customCardWidget(
                 title: "ضغط الدم",
                 image: "assets/images/Vector 1.png",
-                value: "99 bpm",
+                value: "99 ",
                 measure: "bpm",
                 color: Color.fromARGB(137, 95, 200, 223).value),
             const customCardWidget(
