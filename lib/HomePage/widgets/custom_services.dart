@@ -38,29 +38,32 @@ class ServiceBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 160,
-      decoration: BoxDecoration(
-        color: service.color.withOpacity(0.1),
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(service.icon, size: 40, color: service.color),
-          const SizedBox(height: 8),
-          Text(
-            service.title,
-            textDirection: TextDirection.rtl,
-            style: TextStyle(
-              fontSize: 16,
-              fontFamily: 'Almarai',
-              fontWeight: FontWeight.bold,
-              color: service.color,
+    return GestureDetector(
+      onTap: service.onTap,
+      child: Container(
+        width: 160,
+        decoration: BoxDecoration(
+          color: service.color.withOpacity(0.1),
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(service.icon, size: 40, color: service.color),
+            const SizedBox(height: 8),
+            Text(
+              service.title,
+              textDirection: TextDirection.rtl,
+              style: TextStyle(
+                fontSize: 16,
+                fontFamily: 'Almarai',
+                fontWeight: FontWeight.bold,
+                color: service.color,
+              ),
+              textAlign: TextAlign.center,
             ),
-            textAlign: TextAlign.center,
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -70,10 +73,12 @@ class ServiceModel {
   final String title;
   final IconData icon;
   final Color color;
+  final VoidCallback onTap;
 
   ServiceModel({
     required this.title,
     required this.icon,
     required this.color,
+    required this.onTap,
   });
 }
