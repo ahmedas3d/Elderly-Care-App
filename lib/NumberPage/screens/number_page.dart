@@ -1,5 +1,6 @@
 import 'package:care_app/DoctorsPage/widgets/custom_app_bar.dart';
 import 'package:care_app/DoctorsPage/widgets/custom_search_bar.dart';
+import 'package:care_app/NumberPage/widgets/number_list.dart';
 import 'package:care_app/core/utils/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -19,6 +20,7 @@ class NumberPage extends StatelessWidget {
             SizedBox(height: 10),
             CustomSearchBar(title: 'ابحث عن ارقام الطوارئ'),
             SizedBox(height: 10),
+            NumberList(),
           ],
         ),
       ),

@@ -105,7 +105,8 @@ class DoctorList extends StatelessWidget {
                       children: [
                         Text(
                           "⭐ ${doctor.rating}",
-                          style: const TextStyle(fontSize: 12),
+                          style: const TextStyle(
+                              fontSize: 12, fontFamily: 'Almarai'),
                         ),
                         const Spacer(),
                         Text(
@@ -113,6 +114,7 @@ class DoctorList extends StatelessWidget {
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
+                            fontFamily: 'Almarai',
                           ),
                         ),
                       ],
@@ -123,6 +125,7 @@ class DoctorList extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 14,
                       color: Colors.grey,
+                      fontFamily: 'Almarai',
                     ),
                   ),
                   const Row(
@@ -139,6 +142,7 @@ class DoctorList extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 12,
                           color: Colors.grey,
+                          fontFamily: 'Almarai',
                         ),
                       ),
                     ],
@@ -170,6 +174,7 @@ class DoctorList extends StatelessWidget {
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
                             color: AppColors.textColor,
+                            fontFamily: 'Almarai',
                           ),
                         ),
                       ],
