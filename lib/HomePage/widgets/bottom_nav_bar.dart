@@ -1,4 +1,6 @@
+import 'package:care_app/DoctorsPage/screens/doctors_page.dart';
 import 'package:care_app/HomePage/screens/home_page.dart';
+import 'package:care_app/NumberPage/screens/number_page.dart';
 import 'package:care_app/core/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -19,7 +21,7 @@ class BottomNavBar extends StatelessWidget {
           ),
         ),
         PersistentTabConfig(
-          screen: HomePage(),
+          screen: const NumberPage(),
           item: ItemConfig(
             iconSize: 30,
             activeForegroundColor: AppColors.mainColor,
@@ -32,7 +34,7 @@ class BottomNavBar extends StatelessWidget {
           ),
         ),
         PersistentTabConfig(
-          screen: HomePage(),
+          screen: DoctorsPage(),
           item: ItemConfig(
             iconSize: 30,
             activeColorSecondary: AppColors.mainColor,
