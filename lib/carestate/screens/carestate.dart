@@ -64,7 +64,7 @@ class Carestate extends StatelessWidget {
               color: 0xC9D28E79,
             ),
             const customCardWidget(
-              title: "الوزن",
+              title: "نسبة السكر",
               image: "assets/images/Vector.png",
               value: "140",
               measure: " mg/dL",
