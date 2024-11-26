@@ -1,4 +1,4 @@
-import 'package:care_app/screens/home_page.dart';
+import 'package:care_app/HomePage/screens/home_page.dart';
 import 'package:flutter/material.dart';
 
 class AppRoutes {
