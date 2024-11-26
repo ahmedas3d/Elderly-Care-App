@@ -1,9 +1,11 @@
-import 'package:care_app/HomePage/widgets/news_list.dart';
-import 'package:care_app/core/utils/colors.dart';
 import 'package:care_app/HomePage/widgets/custom_banner.dart';
 import 'package:care_app/HomePage/widgets/custom_services.dart';
+import 'package:care_app/HomePage/widgets/news_list.dart';
+import 'package:care_app/core/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../../carestate/screens/carestate.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
@@ -66,7 +68,12 @@ class HomePage extends StatelessWidget {
                     title: 'الحالة الصحية',
                     icon: FontAwesomeIcons.heartPulse,
                     color: Colors.green,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return const Carestate();
+                      }));
+                    },
                   ),
                   ServiceModel(
                     title: 'الموقع',
